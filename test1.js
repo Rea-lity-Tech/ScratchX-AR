@@ -1,5 +1,5 @@
-new (function(ext) {
-  var descriptor;
+new (function() {
+  var descriptor, ext;
   ext = this;
   ext._shutdown = function() {};
   ext._getStatus = function() {
