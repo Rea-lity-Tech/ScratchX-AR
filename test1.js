@@ -8,14 +8,14 @@ new (function() {
       msg: 'ready'
     };
   };
-  ext.wait_random = callback(function() {
+  ext.wait_random = function(callback) {
     var wait;
     wait = Math.random;
     console.log('Waiting for ' + wait + ' seconds');
     return window.setTimeout(function() {
       return callback();
     }, wait * 1000);
-  });
+  };
   descriptor = {
     blocks: [['w', 'wait for random time', 'wait_random']]
   };
