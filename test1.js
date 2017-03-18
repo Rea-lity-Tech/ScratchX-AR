@@ -1,4 +1,4 @@
-(function(ext) {
+new (function(ext) {
   var descriptor;
   ext = this;
   ext._shutdown = function() {};
@@ -20,4 +20,4 @@
     blocks: [['w', 'wait for random time', 'wait_random']]
   };
   return ScratchExtensions.register('Random wait extension', descriptor, ext);
-});
+})();
